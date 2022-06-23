@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "email":"josh@gmail.com",
+    "name":"josh",
+    "contact":"0670059959",
+    "password":"0655496555"
+
+}
+
+###
+
+GET  http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.bW5jdWx3YW5hQGdtYWlsLmNvbQ.coHJhNpWVqAX8tHUjJGMQv0BcsqwXVpH0LuEgMiIwHg
+
+###
+PATCH http://localhost:5000/users
+
+{
+    "email":"jchkf@gmail.com",
+    "password":""
+}
